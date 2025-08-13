@@ -14,7 +14,7 @@ function addProduct() {
         document.getElementById('id').value = '';
         document.getElementById('name').value = '';
         document.getElementById('price').value = '';
-        document.getElementById('category').value = 'electronics'; 
+        document.getElementById('category').value = ''; 
         document.getElementById('quantity').value = '';
         alert('Product added successfully');
     } else {
@@ -50,6 +50,8 @@ function displayProducts() {
 
         productList.appendChild(tr);
     });
+
+	getCategoryDropdown();
 }
 
 function filterByCategory() {
@@ -85,4 +87,20 @@ function filterByCategory() {
 	});
 }
 
+function getCategoryDropdown() {
+	const uniqueCategories = [...new Set(products.map(product => product.category))];
+
+	const categoryDropdown = document.getElementById('categoryDropdown');
+	categoryDropdown.innerHTML = '<option value="all">All</option>';
+	uniqueCategories.forEach(category => {
+		const option = document.createElement('option');
+		option.value = category;
+		option.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+		categoryDropdown.appendChild(option);
+	});
+}
+
+getCategoryDropdown();
 displayProducts();
+
+

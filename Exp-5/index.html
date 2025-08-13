@@ -25,20 +25,12 @@
 			<input type="number" id="quantity" placeholder="Product Quantity" required></input>
 			<br>
 			<label for="Product Category"></label>
-			<select name="category" id="category">
-				<option value="electronics">Electronics</option>
-				<option value="clothing">Clothing</option>
-				<option value="books">Books</option>
-			</select>
+			<input type="text" id="category" placeholder="Product Category" required>
 			<br>
 			<button onclick="addProduct()">Add Product</button>
 			<br>
 			<h1>Filter By Category</h1>
 			<select id="categoryDropdown" onchange="filterByCategory()">
-				<option value="all">All</option>
-				<option value="electronics">Electronics</option>
-				<option value="clothing">Clothing</option>
-				<option value="books">Books</option>
 			</select>
 			<br>
 			<div class="table-container">
