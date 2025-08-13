@@ -1,0 +1,10 @@
+section {
+	padding: 4rem 0rem;
+}
+
+.model {
+	width: calc(100vw - 5rem);
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 1rem;
+}
