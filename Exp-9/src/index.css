@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.person-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f90000;
+  color: white;
+} 
+
+.person-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 2px solid white;
+}
+
+.person-info ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.person-info li {
+  margin-bottom: 0.5rem;
+}
+
+.student-card {
+  background-color: #007bff;
+}
+
+.teacher-card {
+  background-color: #28a745;
+}
