@@ -1,0 +1,32 @@
+.container {
+	border: 2px solid black;
+	padding: 16px;
+}
+
+.book-list {
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.book {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #000;
+	padding: 4px 8px;
+	border-radius: 4px;
+
+}
+
+input {
+	height: 32px;
+	width: 512px;
+	margin: 8px;
+}
+
+button {
+	padding: 4px 8px;
+	height: 36px;
+}

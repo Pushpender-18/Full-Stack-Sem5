@@ -1,6 +1,5 @@
 const drawingCanvas = document.getElementById('drawing-canvas');
 
-// Plot points while the mouse button is pressed
 let isDrawing = false;
 drawingCanvas.addEventListener('mousedown', () => {
 	isDrawing = true;
@@ -17,9 +16,7 @@ drawingCanvas.addEventListener('mousemove', (event) => {
 	}
 });
 
-// Function to plot a point on the canvas
 function plotPoint(x, y) {
-	// Add Circle element to SVG
 	const svgns = "http://www.w3.org/2000/svg";
 	const circle = document.createElementNS(svgns, 'circle');
 	circle.setAttribute('cx', x);
